@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.4.6" modifiedIn="OpenLP 2.4.6" modifiedDate="2022-01-11T11:16:01">
+  <properties>
+    <titles>
+      <title>Annonces - Dimanche 9 janvier 2022</title>
+    </titles>
+    <authors>
+      <author>-</author>
+    </authors>
+    <songbooks>
+      <songbook name="Traditionnel"/>
+    </songbooks>
+    <themes>
+      <theme>Annonces</theme>
+    </themes>
+  </properties>
+  <format>
+    <tags application="OpenLP">
+      <tag name="ep">
+        <open>&lt;div style="border: 4px solid;background-color:white; color:black;margin-bottom:4px;"&gt;</open>
+        <close>&lt;/div&gt;</close>
+      </tag>
+      <tag name="href">
+        <open>&lt;a href="https://www.google.fr"&gt;</open>
+        <close>&lt;/a&gt;</close>
+      </tag>
+    </tags>
+  </format>
+  <lyrics>
+    <verse name="v1">
+      <lines><tag name="ep">HORAIRES DE CETTE SEMAINE</tag><br/>• NORMAUX</lines>
+    </verse>
+    <verse name="v2">
+      <lines><tag name="ep">CONCERT des PETITS CHANTEURS À LA CROIX DE BOIS</tag><br/>Samedi 12 Février 2022<br/>19h30<br/>église Ste Anne</lines>
+    </verse>
+    <verse name="v3">
+      <lines><tag name="ep">SERVICE ÉCOUTE</tag><br/>FERMÉ PENDANT LES VACANCES SCOLAIRES</lines>
+    </verse>
+    <verse name="v4a">
+      <lines><tag name="ep">CAMPAGNE d'INSCRIPTION<br/>à la<br/>NEWSLETTER PAROISSIALE</tag><br/><br/>S'incrire à partir du <tag name="href">site internet</tag> de la paroisse</lines>
+    </verse>
+    <verse name="v4b">
+      <lines><tag name="ep">PROCHAINE MESSE À MARLA</tag><br/>Dimanche 16 janvier à 16h<br/><br/>Contacter Père Charles-Antoine</lines>
+    </verse>
+  </lyrics>
+</song>

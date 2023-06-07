@@ -1,0 +1,31 @@
+{
+  "name": "eglise-sainte-anne-website",
+  "version": "1.0.0",
+  "description": "",
+  "apidoc": {
+    "title": "apiDoc browser for eglise-sainte-anne-website",
+    "url" : "https://api.github.com/v1"
+  },
+  "main": "index.cjs",
+  "scripts": {
+    "test": "jest",
+    "start": "electron ."
+  },
+  "type": "module",
+  "author": "Jérémy Payet",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "electron": "^24.3.1",
+    "electron-reload": "^2.0.0-alpha.1",
+    "jwt-decode": "^3.1.2",
+    "keytar": "^7.9.0",
+    "mongodb": "^5.5.0",
+    "mysql2": "^3.3.1",
+    "promise-mysql": "^5.2.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

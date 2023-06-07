@@ -1,0 +1,28 @@
+html{
+    background-image: url(https://www.cartedelareunion.fr/wp-content/uploads/2016/04/Eglise-Sainte-Anne-cartedelareunion.fr-%C2%A9-Serge-Gelabert-1422x800.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+        background-attachment: fixed;
+	background-size: cover;
+}
+#menu_actualites, #menu_apropos {
+	background-color: #333;
+}
+footer {
+    background-color: black;
+    height: 5%;
+	align-items: center;
+    display: flex;
+}
+div#footer > a {
+    color: white;
+    font-size: 2em;
+}
+div#footer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.fab {
+    font-size: 100%;
+}
