@@ -44,9 +44,9 @@
     <br />
     <a href="https://github.com/pikashi974/eglise-sainte-anne-website">View Demo</a>
     ·
-    <a href="https://github.com/pikashi974/eglise-sainte-anne-website/issues">Report Bug</a>
+    <a href="https://github.com/pikashi974/eglise-sainte-anne-website-rest/issues">Report Bug</a>
     ·
-    <a href="https://github.com/pikashi974/eglise-sainte-anne-website/issues">Request Feature</a>
+    <a href="https://github.com/pikashi974/eglise-sainte-anne-website-rest/issues">Request Feature</a>
   </p>
 </div>
 
@@ -142,7 +142,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 
-See the [open issues](https://github.com/pikashi974/eglise-sainte-anne-website/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/pikashi974/eglise-sainte-anne-website-rest/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
@@ -195,15 +195,15 @@ Project Link: [https://github.com/pikashi974/eglise-sainte-anne-website](https:/
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/pikashi974/eglise-sainte-anne-website.svg?style=for-the-badge
-[contributors-url]: https://github.com/pikashi974/eglise-sainte-anne-website/graphs/contributors
+[contributors-url]: https://github.com/pikashi974/eglise-sainte-anne-website-rest/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/pikashi974/eglise-sainte-anne-website.svg?style=for-the-badge
-[forks-url]: https://github.com/pikashi974/eglise-sainte-anne-website/network/members
+[forks-url]: https://github.com/Pikashi974/eglise-sainte-anne-website-rest/forks
 [stars-shield]: https://img.shields.io/github/stars/pikashi974/eglise-sainte-anne-website.svg?style=for-the-badge
-[stars-url]: https://github.com/pikashi974/eglise-sainte-anne-website/stargazers
+[stars-url]: https://github.com/pikashi974/eglise-sainte-anne-website-rest/stargazers
 [issues-shield]: https://img.shields.io/github/issues/pikashi974/eglise-sainte-anne-website.svg?style=for-the-badge
-[issues-url]: https://github.com/pikashi974/eglise-sainte-anne-website/issues
+[issues-url]: https://github.com/pikashi974/eglise-sainte-anne-website-rest/issues
 [license-shield]: https://img.shields.io/github/license/pikashi974/eglise-sainte-anne-website.svg?style=for-the-badge
-[license-url]: https://github.com/pikashi974/eglise-sainte-anne-website/blob/master/LICENSE.txt
+[license-url]: https://github.com/pikashi974/eglise-sainte-anne-website-rest/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/j%C3%A9r%C3%A9my-payet-b9148b21b/
 [product-screenshot]: images/screenshot.png
