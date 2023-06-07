@@ -14,7 +14,14 @@ window.addEventListener("load", async () => {
 
 let horaireData, annonceData = {};
 
-
+/**
+ * 
+ * @apiName init
+ * 
+ * @apiDescription Initialize the different elements of the page
+ * 
+ * 
+ */
 async function init() {
     button.addEventListener("click", showXML)
     window.api.initNavbar();
@@ -24,7 +31,25 @@ async function init() {
 
     console.log("Elements initialisés");
 }
+/**
+ * @apiName gotHoraires
 
+ * 
+ * @apiParam  {Array[Horaire]} horaires All the horaires
+ * 
+ * @apiParamExample  {type} Request-Example:
+ *  id = "5"
+ * "document": {
+ *      "jour": "Sivanaday",
+ *      "value": {
+ *          "heure": "9h00",
+ *          "description": "MESSE"
+ *      }
+ *  }
+ * 
+ * 
+ * 
+ */
 const gotHoraires = (horaires) => {
     horaireData = horaires;
     var empData = horaires.map((horaire) => {

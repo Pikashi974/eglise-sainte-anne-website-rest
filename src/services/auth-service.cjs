@@ -16,14 +16,82 @@ let accessToken = null;
 let profile = null;
 let refreshToken = null;
 
+/**
+ * 
+ * @apiName getAccessToken
+ * 
+ * @apiSuccess (200) {JSON} accessToken The access token
+ * 
+ * @apiParamExample  {type} Request-Example:
+ * {
+ *     property : value
+ * }
+ * 
+ * 
+ * @apiSuccessExample {type} Success-Response:
+ * {
+ *  "iss": "https://my-domain.auth0.com/",
+ * "sub": "auth0|123456",
+ * "aud": [
+ *  "https://example.com/health-api",
+ *  "https://my-domain.auth0.com/userinfo"
+ * ],
+ * "azp": "my_client_id",
+ * "exp": 1311281970,
+ * "iat": 1311280970,
+ * "scope": "openid profile read:patients read:admin"
+ * }
+ * 
+ * 
+ */
 function getAccessToken() {
     return accessToken;
 }
 
+/**
+ * 
+ * @apiName getProfile
+ * 
+* @apiSuccess (200) {JSON} Profile The user profile
+ * 
+ * @apiParamExample  {type} Request-Example:
+ * {
+ *     property : value
+ * }
+ * 
+ * 
+ * @apiSuccessExample {type} Success-Response:
+ * {
+ *  "iss": "https://my-domain.auth0.com/",
+ * "sub": "auth0|123456",
+ * "aud": [
+ *  "https://example.com/health-api",
+ *  "https://my-domain.auth0.com/userinfo"
+ * ],
+ * "azp": "my_client_id",
+ * "exp": 1311281970,
+ * "iat": 1311280970,
+ * "scope": "openid profile read:patients read:admin"
+ * }
+ * 
+ * 
+ */
 function getProfile() {
     return profile;
 }
 
+/**
+ * 
+ * @apiName getAuthenticationURL
+ * 
+ * @apiSuccess (200) {String} URL The authentification URL
+ * 
+ * 
+ * @apiSuccessExample {type} Success-Response:
+ * "https://auth0Domain/authorize?scope=openid%20profile%20offline_access&response_type=code&client_id=clientId&redirect_uri=redirectUri"
+ * 
+ * 
+ */
 function getAuthenticationURL() {
     return (
         "https://" +
@@ -39,6 +107,12 @@ function getAuthenticationURL() {
     );
 }
 
+/**
+ * 
+ * @api {POST} /oauth/token Refreshing a Token
+ * @apiName refreshTokens
+ * 
+ */
 async function refreshTokens() {
     const refreshToken = await keytar.getPassword(keytarService, keytarAccount);
 
@@ -69,6 +143,19 @@ async function refreshTokens() {
     }
 }
 
+/**
+ * 
+ * @api {POST} /oauth/token Loading tokens
+ * @apiName loadTokens
+ * 
+ * 
+ * @apiParam  {String} callbackURL URL to use as callback
+ * 
+ * @apiParamExample  {String} Request-Example:
+ * http://localhost/callback*
+ * 
+ * 
+ */
 async function loadTokens(callbackURL) {
     const urlParts = url.parse(callbackURL, true);
     const query = urlParts.query;
@@ -106,6 +193,11 @@ async function loadTokens(callbackURL) {
     }
 }
 
+/**
+ * @apiName logout
+ * 
+ * @apiDescription Logs out of the app
+ */
 async function logout() {
     await keytar.deletePassword(keytarService, keytarAccount);
     accessToken = null;
@@ -113,6 +205,16 @@ async function logout() {
     refreshToken = null;
 }
 
+/**
+ * @apiName getLogOutUrl
+ * 
+ * @apiSuccess (200) {String} URL The URL Logout
+ * 
+ * @apiSuccessExample {type} Success-Response:
+ * `https://auth0Domain/v2/logout`
+ * 
+ * 
+ */
 function getLogOutUrl() {
     return `https://${auth0Domain}/v2/logout`;
 }

@@ -49,9 +49,8 @@ let updateHoraire = (id, emp) => {
   console.log(`mainPreload > upDateHoraire : ${id}`);
 
   const horaire = {
-    salary: emp.salary,
     jour: emp.jour,
-    position: emp.position,
+    value: emp.value,
   };
 
   horairedata.updateHoraire(id, horaire).then((res) => {

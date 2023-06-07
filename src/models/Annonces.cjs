@@ -154,7 +154,7 @@ class Annonces {
    * @apiSuccess (200) {JSON} res description
    * 
    * @apiParamExample  {id} Request-Example:
-   *  id = "5"
+   *  "id" = "5"
    * "document": {
    *    "annonces": [
    *            "Texte 1",
