@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/pikashi974/eglise-sainte-anne-website">
+  <a href="https://github.com/pikashi974/eglise-sainte-anne-website-rest/">
     <img src="https://scontent.frun2-1.fna.fbcdn.net/v/t39.30808-6/309383675_403473668634177_2212730590854783403_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=WOIXW0TARLQAX_yvbKi&_nc_ht=scontent.frun2-1.fna&oh=00_AfAkyy5F28wJPZ5OzlM2zVu0Ue9OU3TtdLL7ky4GGFKoqw&oe=648500C0" alt="Logo" width="80" height="80">
   </a>
 
@@ -39,10 +39,10 @@
   <p align="center">
     This project's goal is to create an API REST that can allow someone to manage the needs of a church
     <br />
-    <a href="https://github.com/pikashi974/eglise-sainte-anne-website"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/pikashi974/eglise-sainte-anne-website-rest/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/pikashi974/eglise-sainte-anne-website">View Demo</a>
+    <a href="https://github.com/pikashi974/eglise-sainte-anne-website-rest/">View Demo</a>
     ·
     <a href="https://github.com/pikashi974/eglise-sainte-anne-website-rest/issues">Report Bug</a>
     ·
@@ -179,7 +179,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 
-Project Link: [https://github.com/pikashi974/eglise-sainte-anne-website](https://github.com/pikashi974/eglise-sainte-anne-website)
+Project Link: [https://github.com/pikashi974/eglise-sainte-anne-website-rest/](https://github.com/pikashi974/eglise-sainte-anne-website-rest/)
 
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
@@ -194,7 +194,7 @@ Project Link: [https://github.com/pikashi974/eglise-sainte-anne-website](https:/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/pikashi974/eglise-sainte-anne-website.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/pikashi974/eglise-sainte-anne-website-rest.svg?style=for-the-badge
 [contributors-url]: https://github.com/pikashi974/eglise-sainte-anne-website-rest/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/pikashi974/eglise-sainte-anne-website.svg?style=for-the-badge
 [forks-url]: https://github.com/Pikashi974/eglise-sainte-anne-website-rest/forks
