@@ -84,7 +84,7 @@ let deleteAnnonces = (id) => {
   console.log(`mainPreload > Delete : ${id}`);
 
   annoncedata.deleteAnnonce(id).then((res) => {
-    gotDeletedResultCallback(res);
+    location.reload();
   });
 };
 
@@ -104,9 +104,15 @@ let gotAnnonceUpdatedResult = (callback) => {
   gotAnnonceUpdatedCallback = callback;
 };
 
+/**
+ * 
+ * @apiName moveNavbar
+ * 
+ * @description Move both the navbar, the sidebar and the footer on click
+ * 
+ * 
+ */
 function moveNavbar() {
-  // console.log(window.getComputedStyle(sidenav).transform == 'matrix(1, 0, 0, 1, 0, 0)');
-  // console.log(sidenav.style.transform);
   const sidenav = document.querySelector("#layoutSidenav_nav");
   const navbar = document.querySelector("#navbar  ");
   if (window.getComputedStyle(sidenav).transform == 'matrix(1, 0, 0, 1, 0, 0)') {
@@ -120,6 +126,12 @@ function moveNavbar() {
   }
 }
 
+/**
+ * 
+ * @apiName initNavbar
+ * 
+ * @description Initialize the navbar
+ */
 function initNavbar() {
   const navbar = document.querySelector("#navbar  ");
   fetch("navbar.html")
@@ -129,14 +141,19 @@ function initNavbar() {
     })
     .then(() => {
       document.getElementById('logout').onclick = () => {
-        window.electronAPI.logOut();
+        electronAPI.logOut();
       };
       document.getElementById('sidebarToggle').onclick =() => {
         moveNavbar();
       }; 
     });
 }
-
+/**
+ * 
+ * @apiName initSidenav
+ * 
+ * @description Initialize the side navigation
+ */
 function initSidenav() {
   const sidenav = document.querySelector("#layoutSidenav_nav");
   fetch("sidenav.html")
@@ -148,7 +165,12 @@ function initSidenav() {
       getHoraires();
     });
 }
-
+/**
+ * 
+ * @apiName initSidenav
+ * 
+ * @description Initialize the footer
+ */
 function initFooter() {
   const footer = document.querySelector("footer");
   fetch("footer.html")
@@ -158,9 +180,9 @@ function initFooter() {
     });
 }
 
-function XMLToJSON(xml) {
-  return xml2json.xml2json(xml)
-}
+// function XMLToJSON(xml) {
+//   return xml2json.xml2json(xml)
+// }
 
 // API Definition
 const electronAPI = {
@@ -189,7 +211,6 @@ process.once("loaded", () => {
     initNavbar,
     initSidenav,
     initFooter,
-    XMLToJSON,
   });
   contextBridge.exposeInMainWorld('electronAPI', electronAPI);
 });

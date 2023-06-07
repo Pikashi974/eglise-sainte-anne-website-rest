@@ -31,7 +31,7 @@ async function init() {
  * @apiName gotHoraires
 
  * 
- * @apiParam  {Array[Horaire]} horaires All the horaires
+ * @apiParam  {Array} horaires All the horaires
  * 
  * @apiParamExample  {type} Request-Example:
  *  id = "5"

@@ -19,8 +19,6 @@ function createAuthWindow() {
     }
   });
 
-  
-
   win.loadURL(authService.getAuthenticationURL());
 
   const {session: {webRequest}} = win.webContents;
