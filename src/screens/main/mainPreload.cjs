@@ -107,12 +107,16 @@ let gotAnnonceUpdatedResult = (callback) => {
 function moveNavbar() {
   // console.log(window.getComputedStyle(sidenav).transform == 'matrix(1, 0, 0, 1, 0, 0)');
   // console.log(sidenav.style.transform);
+  const sidenav = document.querySelector("#layoutSidenav_nav");
+  const navbar = document.querySelector("#navbar  ");
   if (window.getComputedStyle(sidenav).transform == 'matrix(1, 0, 0, 1, 0, 0)') {
     navbar.style.transform = "translateX(0)"
     navbar.style.right = "0"
+    sidenav.style.transform = "translateX(-225px)"
   } else {
     navbar.style.transform = "translateX(225px)"
     navbar.style.right = "225px"
+    sidenav.style.transform = "translateX(0)"
   }
 }
 
@@ -127,6 +131,9 @@ function initNavbar() {
       document.getElementById('logout').onclick = () => {
         window.electronAPI.logOut();
       };
+      document.getElementById('sidebarToggle').onclick =() => {
+        moveNavbar();
+      }; 
     });
 }
 
